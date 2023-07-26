@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package crud;
+
+option go_package = "github.com/lyazii22/grpc-login/login/proto";
+
+message CreateUserRequest{
+    string username = 1;
+	string password = 2;
+}
+
+message CreateUserResponse{
+    string id = 1;
+    string name = 2;
+}
+
+message GetUserResponse{
+    string id = 1;
+    string name = 2;
+}
+
+message GetUserRequest {
+    string id = 1;
+}
+
+message LoginRequest{
+    string username = 1;
+    string password = 2;
+}
+
+message LoginResponse{
+    string token = 1;
+}
+
+ 
+service Login {
+    rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
+    rpc GetUser (GetUserRequest) returns (GetUserResponse);
+    rpc Login (LoginRequest) returns (LoginResponse);
+}
