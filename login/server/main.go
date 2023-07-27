@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	port = ":50051"
+	port = ":8082"
 )
 
 type loginServer struct {
