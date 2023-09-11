@@ -24,3 +24,25 @@ Then switch to the branch that your interested in, by running the following comm
 ```bash
 git checkout [branch-name]
 ```
+
+### Step 2: Install Dependencies
+
+After navigating into your project directory and switching to right branch, install the necessary dependencies:
+
+```bash
+npm install
+```
+
+### Step 3: Run the Development Server
+
+To start your development server, run:
+
+```bash
+npm run dev
+```
+
+#### Localhost and Port
+
+Once the development server is up, your application should be available at:
+
+Local: http://localhost:5173
