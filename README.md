@@ -18,3 +18,9 @@ First, clone the repository to your local machine. Open a terminal and run the f
 git clone https://github.com/ubersuggest/gcp-ubersuggest-frontend.git
 cd gcp-ubersuggest-frontend
 ```
+
+Then switch to the branch that your interested in, by running the following command:
+
+```bash
+git checkout [branch-name]
+```
